@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: rgb(47, 238, 203);
+}
+
+.nav_box {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 60px;
+}
+
+.my_shop {
+  margin-right: 40px;
+  margin-left: 85px; 
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.cart,
+.profile_icon,
+.order_icon {
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.cart span:nth-child(1) {
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.cart span:nth-child(2) {
+  padding: 0 3px; /* Adjust padding for smaller size */
+  background-color: rgb(47, 238, 203);
+  color: red;
+  font-weight: bold; /* Correct typo: Change 'bolx' to 'bold' */
+  border-radius: 50%; /* Make the background a circle */
+  position: relative;
+  top: -15px; 
+  font-size: 17px;
+}
+
+.nav_box {
+  display: flex;
+  align-items: center;
+}
+
+.my_shop {
+  margin-right: auto; /* Pushes My Shopping to the left */
+}
+
+.search_bar {
+  flex-grow: 1; /* Expands the search bar to fill remaining space */
+  text-align: center;
+  margin-left: 70px; /* Adjust margin as needed */
+}
+
+.search_bar input {
+  padding: 8px; /* Add padding to input */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  width: 300px;
+}
+
+.search_bar span {
+  padding: 8px; /* Add padding to button */
+  background-color: rgb(47, 238, 203); /* Button background color */
+  color: #000000; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add border radius */
+  margin-left: 5px; /* Adjust margin between input and button */
+  cursor: pointer; /* Add pointer cursor */
+  font-size: 1.7 rem;
+}
+
+.spacer {
+  flex-grow: 2; /* Creates space between search bar and icons */
+}
+
+.cart,
+.profile_icon,
+.order_icon {
+  margin-left: 10px; 
+  margin-right: 5px;/* Adds spacing between icons */
+}

@@ -1,0 +1,78 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .card:hover {
+    box-shadow: 0 10px 10px 10px rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .imageBox {
+    margin-top: 10px;
+    width: 200px;
+    overflow: hidden;
+    height: 200px; /* Set the height of the image container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    margin-left: 55px;
+    transition: transform 0.3s; /* Add transition effect */
+}
+
+.imageBox:hover {
+  transform: scale(1.2); /* Zoom in by 20% on hover */
+} /* Center vertically */
+  
+  
+  .image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;/* Ensure images maintain aspect ratio and fill the container */
+  }
+  
+  .details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px; /* Reduce margin to bring title closer to the author */
+  }
+  
+  .author {
+    color: #555;
+    margin-bottom: 10px; /* Increase margin between author and price */
+  }
+  
+  .price {
+    font-size: 1rem;
+    margin-right: auto;
+    color: #ff0000; 
+    margin-bottom: 5px;/* Push price to the left side */
+  }
+  
+  .add-to-cart {
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-end; /* Align button to the right side */
+  }
+  
+  .add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  

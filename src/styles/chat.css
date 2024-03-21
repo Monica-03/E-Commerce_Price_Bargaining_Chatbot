@@ -1,0 +1,137 @@
+.chatbot-container {
+  position: relative;
+}
+
+.chatbot-window {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px; /* Adjust size as needed */
+  height: 443px; /* Adjust size as needed */
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.chatbot-header {
+  background-color: #FEEDE8;
+  padding: 5px 5px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.bargai-logo {
+  width: 60px; /* Adjust the width of the logo container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.bargai-logo img {
+  width: 100%; /* Ensure the logo fills its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.chatbot-header h2 {
+  margin: 0;
+  margin-right: auto; /* Push the h2 element to the left */
+}
+
+.chatbot-header button {
+  margin-left: auto;
+  margin-right: 5px; /* Push the button to the right */
+}
+
+.chatbot-body {
+  padding: 10px;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+
+.chatbot-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatbot-body::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.chatbot-body::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+.chatbot-body p {
+  margin: 5px 0;
+}
+
+.chatbot-body p.user {
+  text-align: right;
+  font-weight: bold;
+}
+
+.chatbot-body p.bot {
+  text-align: left;
+}
+
+.chatbot-input {
+  padding: 10px;
+  display: flex;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chatbot-input button {
+  padding: 8px 8px;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: rgb(254, 76, 82);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chatbot-input button:hover {
+  background-color: rgb(245, 105, 110);
+}
+
+.chatbot-body {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.chatbot-body {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  max-width: 70%;
+}
+
+.message-bot {
+  background-color: #FEEDE8;
+  float: left;
+}
+
+.message-user {
+  background-color: #ff8383;
+  color: rgb(0, 0, 0);
+  align-self: flex-end;
+}
